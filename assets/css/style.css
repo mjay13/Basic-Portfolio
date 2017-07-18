@@ -11,18 +11,26 @@ The sidebar is 270px wide.
 /* ----------General----------- */
 
 
-/* Background Image */
+/* Background Image not working? */
 
+body {
+    background-color: lightgrey;
+    width: 960px;
+    align-items: center;
+}
 
 /* Header */
 
 header {
     background-color: #ffffff;
+    border: solid;
+    border-color: #dddddd;
+    padding: 20px;
+    border-width: 4px;
+    border-radius: 0px;
+    margin: 0 auto;
+    height: 100px;
 }
-
-
-
-
 
 /* Font Specifications */
 
@@ -36,24 +44,19 @@ p {
 
 .mainText {
     color: #777777;
+    font-size: 13px;
 }
 
 .verticalLines {
     color: #dddddd;
     height: 25px;
     width: 25px;
-
     float: right;
 }
 
 .bigLine {}
 
 .connectLine {}
-
-
-
-
-
 
 /* Title Name */
 
@@ -68,12 +71,6 @@ p {
     vertical-align: middle;
 }
 
-
-
-
-
-
-
 /* Nav */
 
 .nav {
@@ -82,33 +79,31 @@ p {
     float: right;
 }
 
-
-
-
 /* Placement of Body */
-
-.body {
-    width: 650px;
-}
-
-
-
-
 
 /* Body Title - About Me, Portfolio, Contact */
 
 .constrainedHeader {
     width: 650px;
+    align-self: center;
 }
 
 .bodyTitle {
     color: #4aaaa5;
     width: 200px;
+    margin: 10px;
+    font-size: 28px;
 }
 
-
-
-
+.bodyLine {
+    width: 300px;
+    height: 2px;
+    background-color: #dddddd;
+    border: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #dddddd;
+}
 
 /* Connect with Me */
 
@@ -122,23 +117,27 @@ p {
     border-radius: 2px;
     width: 300px;
     height: 250px;
+    margin: 10px;
+    font-size: 12px;
 }
 
-
-
-
+.connectLine {
+    width: 100px;
+    height: 1px;
+    background-color: #dddddd;
+    border: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #dddddd;
+}
 
 /* Social Icons */
 
 .socialIcons {
     width: 75px;
     height: 75px;
-    
+    margin: 5px;
 }
-
-
-
-
 
 /* Footer */
 
@@ -158,9 +157,6 @@ footer {
     clear: both;
 }
 
-
-
-
 /* Anchors */
 
 a,
@@ -173,12 +169,8 @@ a:active {
 
 
 
-
-
-
-
-
 /* -----------Specifics---------- */
+
 
 
 /* About Me */
@@ -186,17 +178,15 @@ a:active {
 .bodyBox {
     border: solid;
     border-color: #dddddd;
+    background-color: #ffffff;
     padding: 20px;
     border-width: 2px;
     border-radius: 2px;
     width: 400px;
     height: 350px;
     margin: 10px;
+    padding: 10px;
 }
-
-
-
-
 
 /* Profile Image */
 
@@ -210,6 +200,7 @@ a:active {
 /* Rezise Images */
 
 .profileIMG {
-    width: 250px;
-    height: 250px;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
 }

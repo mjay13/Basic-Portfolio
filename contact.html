@@ -3,41 +3,46 @@
 
 <head>
     <title>Megan M. Jacobs | Contact</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
 </head>
 
 <body>
-    <!-- Background Image can't seem to get this to download correclty the image is too small assets/images/pw_maze_white.png-->
-    <img src="#" alt="BackgroundIMG">
+    <!-- Background Image can't seem to get this to download correclty the image is too small assets/images/pw_maze_white.png
+    <img src="#" alt="BackgroundIMG"> -->
     <!-- top nav bar -->
     <header>
         <div>
-            <h1><a href="index.html">Megan M. Jacobs</a></h1></div>
+            <h1 class="nameTitle"><a href="index.html">Megan M. Jacobs</a></h1>
+        </div>
         <div>
-            <p><a href="index.html">About</a> | <a href="portfolio.html">Portfolio</a> | <a href="contact.html">Contact</a></p>
+            <p class="mainText nav"><a href="contact.html">Contact</a></p>
+            <p class="verticalLines">|</p>
+            <p class="mainText nav"><a href="portfolio.html">Portfolio</a></p>
+            <p class="verticalLines">|</p>
+            <p class="mainText nav"><a href="index.html">About</a></p>
         </div>
     </header>
-    
-        <h1>Contact</h1>
-        <p>--------------------</p>
+    <div class="bodyBox">
+        <h1 class="bodyTitle">Contact</h1>
+        <div class="bodyLine"></div>
         <!-- Form -->
         <div>
         </div>
-        <!-- Connect with Me box -->
+    </div>
+    <!-- Connect with Me box -->
+    <div class="connect">
         <div>
-            <div>
-                <h1>Connect with Me</h1></div>
-            <p>--------------------</p>
-            <!-- Icons -->
-            <div>
+            <h1>Connect with Me</h1></div>
+        <div class="connectLine"></div>
+        <!-- Icons -->
+        <div>
             <!-- linter saying i need an alt attribte for the img tags but then when i add it, the linter says it's unneccesary? -->
-                <a href="https://github.com/mjay13" alt="GitHubIcon"><img src="assets/images/GitHubIcon.png"></a>
-                <a href="https://www.linkedin.com/in/mjay13/" alt="LinkdinIcon"><img src="assets/images/LinkdinIcon.png"></a>
-                <a href="https://meta.stackexchange.com/users/364793/mjay?tab=profile" alt="StackOverflowIcon"><img src="assets/images/StackOverflowIcon.png"></a>
-            </div>
+            <a href="https://github.com/mjay13" alt="GitHubIcon"><img class="socialIcons"  src="assets/images/GitHubIcon.png"></a>
+            <a href="https://www.linkedin.com/in/mjay13/" alt="LinkdinIcon"><img class="socialIcons"  src="assets/images/LinkdinIcon.png"></a>
+            <a href="https://meta.stackexchange.com/users/364793/mjay?tab=profile" alt="StackOverflowIcon"><img class="socialIcons" src="assets/images/StackOverflowIcon.png"></a>
         </div>
-    
+    </div>
     <footer>
         <p>&copy; 2017 Megan M. Jacobs</p>
     </footer>

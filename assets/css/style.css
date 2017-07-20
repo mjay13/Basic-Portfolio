@@ -83,26 +83,23 @@ p {
 
 /* Body Title - About Me, Portfolio, Contact */
 
-.constrainedHeader {
+.constrainedHeader { /* not working */
     width: 650px;
-    align-self: center;
 }
 
 .bodyTitle {
     color: #4aaaa5;
     width: 200px;
     margin: 10px;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .bodyLine {
     width: 300px;
     height: 2px;
     background-color: #dddddd;
-    border: solid;
-    border-radius: 2px;
-    border-width: 1px;
-    border-color: #dddddd;
+    margin: 10px;
+    
 }
 
 /* Connect with Me */
@@ -115,27 +112,25 @@ p {
     padding: 20px;
     border-width: 2px;
     border-radius: 2px;
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: 125px;
     margin: 10px;
     font-size: 12px;
+    float: left;
 }
 
 .connectLine {
     width: 100px;
     height: 1px;
     background-color: #dddddd;
-    border: solid;
-    border-radius: 2px;
-    border-width: 1px;
-    border-color: #dddddd;
+    
 }
 
 /* Social Icons */
 
 .socialIcons {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     margin: 5px;
 }
 
@@ -151,9 +146,9 @@ footer {
     padding-top: 30px;
 }
 
-.clear::after {
+.clearfix::after {
     content: "";
-    display: blcok;
+    display: block;
     clear: both;
 }
 
@@ -175,6 +170,10 @@ a:active {
 
 /* About Me */
 
+.tightBody {
+    width: 650px;
+}
+
 .bodyBox {
     border: solid;
     border-color: #dddddd;
@@ -183,9 +182,20 @@ a:active {
     border-width: 2px;
     border-radius: 2px;
     width: 400px;
-    height: 350px;
+    height: 300px;
     margin: 10px;
     padding: 10px;
+    float: left;
+}
+
+.firstP {
+    float: right;
+    width: 250px;
+    height: 125px;
+}
+
+.secondP {
+    margin: 15px;
 }
 
 /* Profile Image */
@@ -200,7 +210,7 @@ a:active {
 /* Rezise Images */
 
 .profileIMG {
-    width: 75px;
-    height: 75px;
-    margin: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
 }
